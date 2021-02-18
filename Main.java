@@ -1,16 +1,19 @@
-package com.evenOdd;
+package com.printUsingLoop;
 
-import java.io.InputStream;
-import java.util.Scanner;
+
 
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        int a ,result;
-        Scanner in=newScanner(System.in);
-        System.out.println("enter the number");
-        a=in.nextint();
+        int array[] = {1, 2 ,3,4 ,5};
+        int result=0;
+        int i =0;
+        while( i<=4)
+        {result= result +array[i];
+        i++;
+        }
+        System.out.println("the average is:" +result);
 
     }
 }
